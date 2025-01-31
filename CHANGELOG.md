@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.2.0...awesome-jekyll-theme/v1.2.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* update deploy action ([8ee9af6](https://github.com/a-chacon/awesome-jekyll-theme/commit/8ee9af671c15065f0cabab4db805c0d147fce6dd))
+
 ## [1.2.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.1.0...awesome-jekyll-theme/v1.2.0) (2024-09-23)
 
 
