@@ -3,12 +3,6 @@ logo: /assets/images/logo.avif
 baseurl: /awesome-jekyll-theme
 
 ##
-# Typewritter configuration.
-# Feel free to disable if you don't like it.
-##
-typewriter_effect: false
-
-##
 # Collections configuration
 ##
 collections:

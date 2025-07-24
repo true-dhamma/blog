@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to create an effective landing page for your campaign
-image: "https://picsum.photos/500/300"
+image: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2xyL3drNDY0Mjc2LWltYWdlLmpwZw.jpg"
 category: Ruby On Rails
 author: Me
 ---
