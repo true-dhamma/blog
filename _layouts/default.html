@@ -36,6 +36,7 @@
         
         motionElements.forEach(element => {
           const animationType = element.getAttribute('data-motion');
+          const onScroll = element.getAttribute('data-motion-onscroll') !== 'false';
           
           // Handle stagger cards differently
           if (animationType === 'stagger-cards') {
@@ -50,17 +51,22 @@
             element.style.transform = getInitialTransform(animationType);
           }
           
-          // Create intersection observer for scroll-triggered animations
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                animateElement(entry.target, animationType);
-                observer.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.2 });
-          
-          observer.observe(element);
+          if (onScroll) {
+            // Create intersection observer for scroll-triggered animations
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  animateElement(entry.target, animationType);
+                  observer.unobserve(entry.target);
+                }
+              });
+            }, { threshold: 0.2 });
+            
+            observer.observe(element);
+          } else {
+            // Animate immediately if not dependent on scroll
+            animateElement(element, animationType);
+          }
         });
         
         function getInitialTransform(type) {
