@@ -13,7 +13,9 @@
   </head>
 
   <body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-200">
-    {% include navbar.html %} {{ content }} {% include footer.html %}
+    {% include navbar.html %} 
+      {{ content }} 
+    {% include footer.html %}
     <script>
       document.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function (event) {
@@ -156,6 +158,13 @@
           }
         });
       });
+
+      document.querySelectorAll("section > div").forEach((item) => {
+        scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
+            target: item,
+            offset: ["start end", "end end", "start start", "end start"],
+        })
+      })
     </script>
   </body>
 </html>
