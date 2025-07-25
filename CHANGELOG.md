@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.4.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.3.1...awesome-jekyll-theme/v1.4.0) (2025-07-25)
+
+
+### Features
+
+* add dark mode ([009c3e6](https://github.com/a-chacon/awesome-jekyll-theme/commit/009c3e6984968442c6df6281715276012f98c2b9))
+* bump to tailwindcss 4 ([e8cae6e](https://github.com/a-chacon/awesome-jekyll-theme/commit/e8cae6e0eac10d1408a744ef90dc1eacdb34bdfb))
+* bump to tailwindcss 4 ([53903c5](https://github.com/a-chacon/awesome-jekyll-theme/commit/53903c52118d07ac01c2d38259e19b7c7e19b4da))
+* effects ([5a6be4c](https://github.com/a-chacon/awesome-jekyll-theme/commit/5a6be4ce87d805fb16b380f4e208861031d95493))
+* first animations ([6533425](https://github.com/a-chacon/awesome-jekyll-theme/commit/65334259d5ad95c0712dab50efcb8c6b8188fb37))
+
 ## [1.3.1](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v1.3.0...awesome-jekyll-theme/v1.3.1) (2025-06-22)
 
 
