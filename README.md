@@ -144,18 +144,6 @@ This theme provides several **layouts** for different types of pages. Each layou
 
 ## Configuration
 
-### Type Writer Effect
-
-The Type Writer effect will be apply to all h1 elements in the site. You can disable it setting the next configuration in you \_config.yml file:
-
-```yml
-typewriter_effect: false
-```
-
-```
-
-```
-
 ### Navbar and Footer
 
 The navbar filters pages to be displayed based on a front matter called `nav`. These pages will appear in the navbar listed by the front matter `title`. If there is no `title`, then the filename is used. So, if you want to add a page to the navbar, **don't forget to add `nav: true`**.
@@ -191,9 +179,11 @@ contact_channels:
 ### Favicon and other head element customizations
 
 If you want to have a custom [favicon](https://en.wikipedia.org/wiki/Favicon) for your site, or in any other way add more to the `<head>` element for all pages, then you can simply create a new file `custom_head.html` in the `_includes` directory and put in any such customization. For example, if you want to add a favicon that is location at (say) `assets/images/logo.avif`, then you simply need to create a new file `_include/custom_head.html` and put the following in it.
+
 ```html
 <link rel="shortcut icon" type="image/avif" href="/assets/images/logo.avif" />
 ```
+
 _Note: This theme already contains a file `assets/images/logo.avif`, and so if you create a new one in your site, then it will overwrite the theme file._
 
 ## Plugins
