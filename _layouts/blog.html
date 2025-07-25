@@ -34,12 +34,13 @@ layout: default
     {{ site.data[site.active_lang].strings.blog.more_articles | default:
     site.data['en'].strings.blog.more_articles }}
   </h1>
+
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
-    data-motion="stagger-cards"
   >
-    {% for post in rest_posts %} {% include post_card.html post=post %} {%
-    endfor %}
+    {% for post in rest_posts %}
+      {% include post_card.html post=post %}
+    {% endfor %}
   </div>
   {% endif%}
 </section>
