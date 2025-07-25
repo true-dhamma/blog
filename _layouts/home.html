@@ -4,7 +4,7 @@ layout: default
 
 <section
   id="main"
-  class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2"
+  class="flex flex-col md:flex-row items-center justify-center py-16 md:h-screen border-b-2 dark:border-0"
 >
   <div class="md:mx-2" data-motion="fadeInLeft">
     <img
@@ -14,7 +14,9 @@ layout: default
     />
   </div>
   <div class="fadeIn mx-4 w-4/5 md:w-2/5 text-center md:text-left mt-6 md:mt-0" data-motion="fadeInRight">
-    <div class="prose prose-h1:mb-1">{{ page.main_content | markdownify }}</div>
+    <div class="prose prose-lg prose-h1:text-4xl prose-h2:text-3xl prose-h1:mb-1 dark:prose-invert">
+      {{ page.main_content | markdownify }}
+    </div>
     {% if site.contact_channels_section %}
     <p class="mt-4">
       {{ site.data[site.active_lang].strings.home.contact_me | default:
@@ -70,8 +72,9 @@ layout: default
       site.data['en'].strings.home.projects_title}}
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 py-8 md:py-16" data-motion="stagger-cards">
-      {% for project in site.projects limit:3 %} {% include project_card.html
-      project=project%} {% endfor %}
+      {% for project in site.projects limit:3 %} 
+        {% include project_card.html project=project %} 
+      {% endfor %}
     </div>
     <div class="pt-4 text-end" data-motion="fadeInUp">
       <a
@@ -93,7 +96,7 @@ layout: default
     id="content"
     class="container mx-auto flex flex-col items-center justify-center min-h-screen"
   >
-    <article class="prose mx-auto py-16" data-motion="fadeInUp">{{content}}</article>
+    <article class="prose prose-lg dark:prose-invert prose-h1:text-5xl prose-h2:text-3xl mx-auto py-16" data-motion="fadeInUp">{{content}}</article>
   </section>
 {% endif %}
 
